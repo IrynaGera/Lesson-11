@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tabs {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 8888;
+    background-color: #e5eeee;
+}
+
+.container {
+    background-image: url('img/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 70px;
+    position: relative;
+     box-shadow: 0 20px 20px 0 rgb(0 0 0 / 20%);
+}
+
+.nav-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.item-tabs-signin {
+    margin-right: 40px;
+}
+
+.tabs-link {
+    font-size: 18px;
+    color: #e1c2f1;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Quicksand";
+    text-decoration: none;
+}
+
+.tabs-link:hover {
+    color: #fbf6e4;
+    border-bottom: 3px solid red;
+}
+
+.form-label {
+    color: #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Quicksand";
+    font-style: normal;
+}
+
+.form-input {
+    background: none;
+    width: 100%;
+    border-color: #9f86c8;
+    outline: none;
+}
+
+.form-input:invalid +.form-error{
+    visibility: visible;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.form-input-holder {
+    margin-bottom: 20px;
+}
+
+.form-input-checkbox {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox {
+    font-size: 13px;
+    color: #fbf6e4;
+    font-weight: 700;
+    font-family: "Quicksand";
+    font-style: normal;
+}
+
+.form-submit {
+    margin-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.holder-link {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #b9b9cc;
+    font-weight: 400;
+    font-family: "Quicksand";
+    font-style: normal;
+}
+
+.btn {
+    padding: 15px 105px;
+    background-color: #23ae92;
+    font-size: 18px;
+    color: #fbf6e4;
+    font-weight: 700;
+    font-family: "Quicksand";
+}
+
+input[type="checkbox"]:checked {
+    background: #23ae92;
+    color: white;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    appearance: none;
+    outline: 0;
+    background: lightgray;
+    height: 16px;
+    width: 16px;
+    color: white;
+    margin-right: 8px;
+}
+
+input[type="checkbox"]:after {
+    content: ' ';
+    position: relative;
+    left: 40%;
+    top: 20%;
+    width: 15%;
+    height: 40%;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(50deg);
+    display: none;
+}
+
+input[type="checkbox"]:checked:after {
+    display: block;
+}
+
+
